@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script> -->
+  <script src="library/p5.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+  <div class="tableContainer">
+    <div class="alphaKey">
+      <label id='alphaK' for="alphaKey">Input an alphabet keyword:</label>
+      <input id="alphaKey" size="15" value="ABERDEEN" /> <!--onchange="userKeyChange()"--> 
+    </div>
+    <div id="echoKey"></div>
+    <div class='table5'>
+      <table id='table5'>
+        <tr>
+          <td id='r11'></td>
+          <td id='r12'></td>
+          <td id='r13'></td>
+          <td id='r14'></td>
+          <td id='r15'></td>
+        </tr>
+        <tr>
+          <td id='r21'></td>
+          <td id='r22'></td>
+          <td id='r23'></td>
+          <td id='r24'></td>
+          <td id='r25'></td>
+        </tr>
+        <tr>
+          <td id='r31'></td>
+          <td id='r32'></td>
+          <td id='r33'></td>
+          <td id='r34'></td>
+          <td id='r35'></td>
+        </tr>
+        <tr>
+          <td id='r41'></td>
+          <td id='r42'></td>
+          <td id='r43'></td>
+          <td id='r44'></td>
+          <td id='r45'></td>
+        </tr>
+        <tr>
+          <td id='r51'></td>
+          <td id='r52'></td>
+          <td id='r53'></td>
+          <td id='r54'></td>
+          <td id='r55'></td>
+
+
+        </tr>
+      </table>
+    </div> <!--end div table 5-->
+
+    <div class='table6'>
+      <table id='table6'>
+        <tr>
+          <td></td>
+          <td style="font-weight: bold;">A</td>
+          <td style="font-weight: bold;">D</td>
+          <td style="font-weight: bold;">F</td>
+          <td style="font-weight: bold;">G</td>
+          <td style="font-weight: bold;">V</td>
+          <td style="font-weight: bold;">X</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">A</td>
+          <td id='t11'></td>
+          <td id='t12'></td>
+          <td id='t13'></td>
+          <td id='t14'></td>
+          <td id='t15'></td>
+          <td id='t16'></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">D</td>
+          <td id='t21'></td>
+          <td id='t22'></td>
+          <td id='t23'></td>
+          <td id='t24'></td>
+          <td id='t25'></td>
+          <td id='t26'></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">F</td>
+          <td id='t31'></td>
+          <td id='t32'></td>
+          <td id='t33'></td>
+          <td id='t34'></td>
+          <td id='t35'></td>
+          <td id='t36'></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">G</td>
+          <td id='t41'></td>
+          <td id='t42'></td>
+          <td id='t43'></td>
+          <td id='t44'></td>
+          <td id='t45'></td>
+          <td id='t46'></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">V</td>
+          <td id='t51'></td>
+          <td id='t52'></td>
+          <td id='t53'></td>
+          <td id='t54'></td>
+          <td id='t55'></td>
+          <td id='t56'></td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">X</td>
+          <td id='t61'></td>
+          <td id='t62'></td>
+          <td id='t63'></td>
+          <td id='t64'></td>
+          <td id='t65'></td>
+          <td id='t66'></td>
+        </tr>
+
+      </table>
+    </div> <!--end div table6-->
+
+    <div class="table8">
+      <table id='table8'>
+        <tr>
+          <td id='s11'></td>
+          <td id='s12'></td>
+          <td id='s13'></td>
+          <td id='s14'></td>
+          <td id='s15'></td>
+          <td id='s16'></td>
+          <td id='s17'></td>
+          <td id='s18'></td>
+        </tr>
+        <tr>
+          <td id='s21'></td>
+          <td id='s22'></td>
+          <td id='s23'></td>
+          <td id='s24'></td>
+          <td id='s25'></td>
+          <td id='s26'></td>
+          <td id='s27'></td>
+          <td id='s28'></td>
+        </tr>
+        <tr>
+          <td id='s31'></td>
+          <td id='s32'></td>
+          <td id='s33'></td>
+          <td id='s34'></td>
+          <td id='s35'></td>
+          <td id='s36'></td>
+          <td id='s37'></td>
+          <td id='s38'></td>
+        </tr>
+        <tr>
+          <td id='s41'></td>
+          <td id='s42'></td>
+          <td id='s43'></td>
+          <td id='s44'></td>
+          <td id='s45'></td>
+          <td id='s46'></td>
+          <td id='s47'></td>
+          <td id='s48'></td>
+        </tr>
+        <tr>
+          <td id='s51'></td>
+          <td id='s52'></td>
+          <td id='s53'></td>
+          <td id='s54'></td>
+          <td id='s55'></td>
+          <td id='s56'></td>
+          <td id='s57'></td>
+          <td id='s58'></td>
+        </tr>
+        <tr>
+          <td id='s61'></td>
+          <td id='s62'></td>
+          <td id='s63'></td>
+          <td id='s64'></td>
+          <td id='s65'></td>
+          <td id='s66'></td>
+          <td id='s67'></td>
+          <td id='s68'></td>
+        </tr>
+        <tr>
+          <td id='s71'></td>
+          <td id='s72'></td>
+          <td id='s73'></td>
+          <td id='s74'></td>
+          <td id='s75'></td>
+          <td id='s76'></td>
+          <td id='s77'></td>
+          <td id='s78'></td>
+        </tr>
+        <tr>
+          <td id='s81'></td>
+          <td id='s82'></td>
+          <td id='s83'></td>
+          <td id='s84'></td>
+          <td id='s85'></td>
+          <td id='s86'></td>
+          <td id='s87'></td>
+          <td id='s88'></td>
+        </tr>
+      </table>
+    </div> <!-- end of table8 -->
+  </div> <!--end tableContainer -->
+
+
+
+  <div id="container">
+    <div id="boxLeft">
+      <label id='mesgLabel' for="mesg">Enter<br>Your<br>Message:</label>
+      <button id="msgButton">Show<br> Message</button>   
+    </div> <!--end of div boxLeft -->
+    <div id="messagebox">
+      <textarea id="mesg" rows="2" cols="35" maxlength="40">My 30 character message from 072224.</textarea>
+    </div> <!-- end of div messagebox-->
+    <p id="aspot"></p>
+    <div id="encode">
+      <button id="codeBtn">Encode</button>
+    </div>
+
+
+    <div id="fractioned">
+      <span id="fh4">Fractionated form</span>
+      <table class='frac' id="fdisplay">
+        <tr>
+          <td id="a00"></td>
+          <td id="a01"></td>
+          <td id="a02"></td>
+          <td id="a03"></td>
+          <td id="a04"></td>
+          <td id="a05"></td>
+          <td id="a06"></td>
+          <td id="a07"></td>
+          <td id="a08"></td>
+          <td id="a09"></td>
+          <td id="a10"></td>
+          <td id="a11"></td>
+          <td id="a12"></td>
+          <td id="a13"></td>
+          <td id="a14"></td>
+          <td id="a15"></td>
+          <td id="a16"></td>
+          <td id="a17"></td>
+          <td id="a18"></td>
+          <td id="a19"></td>
+          <td id="a20"></td>
+          <td id="a21"></td>
+          <td id="a22"></td>
+          <td id="a23"></td>
+          <td id="a24"></td>
+          <td id="a25"></td>
+          <td id="a26"></td>
+          <td id="a27"></td>
+          <td id="a28"></td>
+          <td id="a29"></td>
+        </tr>
+        <td id="b00"></td>
+        <td id="b01"></td>
+        <td id="b02"></td>
+        <td id="b03"></td>
+        <td id="b04"></td>
+        <td id="b05"></td>
+        <td id="b06"></td>
+        <td id="b07"></td>
+        <td id="b08"></td>
+        <td id="b09"></td>
+        <td id="b10"></td>
+        <td id="b11"></td>
+        <td id="b12"></td>
+        <td id="b13"></td>
+        <td id="b14"></td>
+        <td id="b15"></td>
+        <td id="b16"></td>
+        <td id="b17"></td>
+        <td id="b18"></td>
+        <td id="b19"></td>
+        <td id="b20"></td>
+        <td id="b21"></td>
+        <td id="b22"></td>
+        <td id="b23"></td>
+        <td id="b24"></td>
+        <td id="b25"></td>
+        <td id="b26"></td>
+        <td id="b27"></td>
+        <td id="b28"></td>
+        <td id="b29"></td>
+        <tr>
+
+      </table>
+    </div> <!-- end of fractioned -->
+
+  </div> <!-- end of container -->
+
+  <div class="transpositionContainer">
+    <div class="transpositionKey">
+      <label id="transpositionKey" for="transpositionKey">Input a transposition phrase 10 to 20 letters:</label>
+      <input id="tpKey" size="20" value="THE QUICK BROWN FOX" /> <!-- onchange="tpKeyChange()"-->
+      <span id="tpEcho"></span>
+    </div> <!--end div transpositionKey -->
+
+    <div class = colBtnContainer>
+      <button id="makeColsBtn">Arrange into Columns</button>
+    </div>
+  </div> <!-- end of transpositionContainer -->
+
+  
+  
+<div class="transpositionTable">
+  <table class='tx5'>
+    <tr>
+      <th id="he00"></th>
+      <th id="he01"></th>
+      <th id="he02"></th>
+      <th id="he03"></th>
+      <th id="he04"></th>
+      <th name="mid"></th>
+      <th id="he05"></th>
+      <th id="he06"></th>
+      <th id="he07"></th>
+      <th id="he08"></th>
+      <th id="he09"></th>
+      <th name="mid"></th>
+      <th id="he10"></th>
+      <th id="he11"></th>
+      <th id="he12"></th>
+      <th id="he13"></th>
+      <th id="he14"></th>
+      <th name="mid"></th>
+      <th id="he15"></th>
+      <th id="he16"></th>
+      <th id="he17"></th>
+      <th id="he18"></th>
+      <th id="he19"></th>
+    </tr>
+    <tr>
+      <td id='h00'></td>
+      <td id='h01'></td>
+      <td id='h02'></td>
+      <td id='h03'></td>
+      <td id='h04'></td>
+      <td name='mid'></td>
+      <td id='h05'></td>
+      <td id='h06'></td>
+      <td id='h07'></td>
+      <td id='h08'></td>
+      <td id='h09'></td>
+      <td name='mid'></td>
+      <td id='h10'></td>
+      <td id='h11'></td>
+      <td id='h12'></td>
+      <td id='h13'></td>
+      <td id='h14'></td>
+      <td name='mid'></td>
+      <td id='h15'></td>
+      <td id='h16'></td>
+      <td id='h17'></td>
+      <td id='h18'></td>
+      <td id='h19'></td>
+    </tr>
+    <tr>
+      <td id='h20'></td>
+      <td id='h21'></td>
+      <td id='h22'></td>
+      <td id='h23'></td>
+      <td id='h24'></td>
+      <td name='mid'></td>
+      <td id='h25'></td>
+      <td id='h26'></td>
+      <td id='h27'></td>
+      <td id='h28'></td>
+      <td id='h29'></td>
+      <td name='mid'></td>
+      <td id='h30'></td>
+      <td id='h31'></td>
+      <td id='h32'></td>
+      <td id='h33'></td>
+      <td id='h34'></td>
+      <td name='mid'></td>
+      <td id='h35'></td>
+      <td id='h36'></td>
+      <td id='h37'></td>
+      <td id='h38'></td>
+      <td id='h39'></td>
+    </tr>
+    <tr>
+      <td id='h40'></td>
+      <td id='h41'></td>
+      <td id='h42'></td>
+      <td id='h43'></td>
+      <td id='h44'></td>
+      <td name='mid'></td>
+      <td id='h45'></td>
+      <td id='h46'></td>
+      <td id='h47'></td>
+      <td id='h48'></td>
+      <td id='h49'></td>
+      <td name='mid'></td>
+      <td id='h50'></td>
+      <td id='h51'></td>
+      <td id='h52'></td>
+      <td id='h53'></td>
+      <td id='h54'></td>
+      <td name='mid'></td>
+      <td id='h55'></td>
+      <td id='h56'></td>
+      <td id='h57'></td>
+      <td id='h58'></td>
+      <td id='h59'></td>
+    </tr>
+  
+  </table>
+</div> <!-- end div transpositionTable-->
+
+<div id="showHere"></div>
+
+  <script src="HTML-tables.js"></script>
+  <script src='polybius.js'></script>
+  <script src="encode6x6.js"></script>
+  <script src="transposition.js"></script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>

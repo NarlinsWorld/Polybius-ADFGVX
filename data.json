@@ -1,0 +1,23 @@
+{
+    "employees": [
+      { "name": "John Doe", "age": 30, "position": "Software Engineer" },
+      { "name": "Jane Doe", "age": 25, "position": "Project Manager" }
+    ],
+  
+    "jsonff":[
+    
+        {"message": "I", "code": "GA"},
+        {"message": "A", "code": "AA"},
+        {"message": "M", "code": "VA"},
+        {"message": "P", "code": "VF"},
+        {"message": "L", "code": "GX"},
+        {"message": "A", "code": "AA"},
+        {"message": "I", "code": "GA"},
+        {"message": "N", "code": "DG"},
+        {"message": "T", "code": "VX"},
+        {"message": "E", "code": "AV"},
+        {"message": "X", "code": "XG"},
+        {"message": "T", "code": "VX"}
+    ]
+  }
+
