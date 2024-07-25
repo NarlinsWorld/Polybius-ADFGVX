@@ -11,7 +11,24 @@
    Digits should be inserted after the first occurrences of the letters
     A (2), B (2) to J (0). This too hasn't been done yet.*/
 
+function SetUpListeners(msg,ff1) {
+    var btn = document.getElementById("msgButton");  //Show Message Button Listener
+    btn.addEventListener("click",function () {ff1.getText()},false);
 
+    let encBtn = document.getElementById('codeBtn');  //Encode button listener
+    encBtn.addEventListener("click", function () {ff1.makeCode()},false);
+
+    let getInput = document.getElementById('alphaKey'); //Input text field for alphabet listener
+    getInput.addEventListener("change", ps6.userKeyChange);
+
+    // let tp = document.getElementById('tpKey'); // Input text field for column header listener
+    // tp.addEventListener("change", tpKeyChange); //tp for transposition key
+
+    // let colBtn = document.getElementById('makeColsBtn');  //Arrange into Columns Button Listener
+    // colBtn.addEventListener("click", columnCode);
+
+
+}
 
 let num = 6;
 let userkey = document.getElementById('alphaKey').value;
@@ -20,15 +37,20 @@ let ps6 = new Polybius(num, userkey); //Do not change the variable name 'ps6' It
 console.table(ps6.a);
 
 if (num == 6) { //additional ADFGVX coding only for when a 6x6 square is employed
-    SetUpListeners();
-}
-displayHTML_Table('data.json'); //example call t display json data as table.
-
-
-
-
+    let msg = document.getElementById('mesg').value;
+    let ff1 = new FractionalForm(ps6.a,msg);
+    SetUpListeners(msg,ff1);
     
-   
+      
+}
+//displayHTML_Table('data.json'); //example call t display json data as table.
+
+
+
+
+
+
+
 
 
 //Pack my box with five dozen liquor jugs

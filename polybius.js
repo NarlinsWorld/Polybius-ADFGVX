@@ -7,7 +7,7 @@ class Polybius {
     this.ky = ky
 
     this.a = [];
-    this.s = '';
+    this.s = ''; //eventually (after addkey) it is the alphabet as a string
 
     if (this.n == 5) {
       this.g5();
@@ -21,9 +21,22 @@ class Polybius {
     this.addkey(); // your key phrase less spaces and duplicate letters is added to the polybius square
   } // end constructor
 
+  userKeyChange() {
+    let userkey = document.getElementById('alphaKey').value;
+    //console.log(userkey.toUpperCase())
+    //ps6.ky=userkey.toUpperCase();
+    userkey = ps6.removeKeyDuplicates(userkey);
+    ps6.ky = userkey;
+    document.getElementById('echoKey').innerHTML = 'Unique key: ' + ps6.ky;
+    if (num == 6) {
+      ps6.g6();
+    }
+    ps6.addkey();
+  }
+
   removeKeyDuplicates(mystr) {
     //let tempstr = mystr.replace(/\s/g, ''); //remove all spaces
-    let tempstr = mystr.replace(/\W|_/g,"");
+    let tempstr = mystr.replace(/\W|_/g, "");
     if (this.n == 6) { tempstr = tempstr.toUpperCase(); }
     if (this.n == 5) {
       tempstr = tempstr.toLowerCase();
@@ -33,7 +46,7 @@ class Polybius {
 
     let charArray = tempstr.split("");
     let uniqueChars = [...new Set(charArray)];
-    console.log('The unique characters in key=',mystr,' are',uniqueChars.join(""))
+    console.log('The unique characters in key=', mystr, ' are', uniqueChars.join(""))
     return uniqueChars.join("");
   }
 
@@ -234,11 +247,6 @@ class Polybius {
     if (n == 8) {
       this.display8(8);
     }
-    let t0 = Date.now();
-    let i = 0;
-    //   while(i<keylen){
-    //     if(Date.now()-t0 > 5000){break;}//safety exit
-
-    //   }//end while loop
+  
   } //end addkey method
 } // end class

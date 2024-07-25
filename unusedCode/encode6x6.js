@@ -113,21 +113,3 @@ userKeyChange = function(){
 
 
 
-function SetUpListeners() {
-    var btn = document.getElementById("msgButton");  //Show Message Button Listener
-    btn.addEventListener("click", getText);
-
-    let encBtn = document.getElementById('codeBtn');  //Encode button listener
-    encBtn.addEventListener("click", makeCode);
-
-    let getInput = document.getElementById('alphaKey'); //Input text field for alphabet listener
-    getInput.addEventListener("change",userKeyChange);
-
-    let tp = document.getElementById('tpKey'); // Input text field for column header listener
-    tp.addEventListener("change",tpKeyChange); //tp for transposition key
-
-    let colBtn = document.getElementById('makeColsBtn');  //Arrange into Columns Button Listener
-    colBtn.addEventListener("click", columnCode);
-    
-    
-}
