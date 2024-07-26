@@ -41,8 +41,8 @@ class FractionalForm {
             let strpair = codepair[0].toString() + codepair[1].toString();
             this.codestring = this.codestring + strpair;
         }
-        console.log(this.codestring);
-        console.log(this.msg);
+        //console.log(this.codestring);
+        //console.log(this.msg);
         //displayfractioned(codestring);
         this.makeJSON(this.msg);
     }
@@ -50,7 +50,7 @@ class FractionalForm {
     makeJSON(plaintext) {
         let codestring = this.codestring;
         //codestring = "VFXAVXXVVDXADAVVAVDVDAAVVXVAAVVVVVAAFFAVFVAVDAAV" //for testing only
-        let jsonff = []; //define an empty json array
+        globalThis.jsonff = []; //define an empty json array
         for (let i = 0; i < plaintext.length; i++) {
             jsonff.push(
                 {
@@ -59,7 +59,6 @@ class FractionalForm {
                 })
         }
         createTable(jsonff); //This will output fractionated text to the HTML screen.
-        return jsonff;
     }
 
     encode(letter) {  // returns a matched pair from the letters ADFGVX using alphabet ps6.a

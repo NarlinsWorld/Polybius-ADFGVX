@@ -1,98 +1,115 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
 }
+
 .tableContainer {
   width: 350px;
   /* height: 100px; */
   margin: auto;
   border: 1px red solid;
-  }
+}
 
-#alphaK{ /* id of the label for the input box of the key */
+#alphaK {
+  /* id of the label for the input box of the key */
   margin-top: 25px;
   margin-right: 10px;
   float: left;
 }
-#alphaKey{ /* id of the input box for the key */
+
+#alphaKey {
+  /* id of the input box for the key */
   margin: 0 auto;
   margin-top: 25px;
 }
 
 
 
-#table6 { /* id of a table */
+#table6 {
+  /* id of a table */
   /*margin: 0 auto; */
   margin: 0 auto;
   margin-top: 15px;
-  width: 200px; 
+  width: 200px;
   border-collapse: collapse;
-} 
+}
 
-#table6 td{
+#table6 td {
   border: 1px solid blue;
   border-spacing: 0px;
 }
 
-#table5 { /* id of a table */
+#table5 {
+  /* id of a table */
   margin: 0 auto;
   margin-top: 25px;
-  width: 200px; 
+  width: 200px;
   border-collapse: collapse;
-} 
+}
 
-#table5 td{
+#table5 td {
   border: 1px solid green;
   border-spacing: 0px;
 }
-#table8 { /* id of a table */
+
+#table8 {
+  /* id of a table */
   margin: 0 auto;
   margin-top: 25px;
-  width: 200px; 
+  width: 200px;
   border-collapse: collapse;
-} 
+}
 
-#table8 td{
+#table8 td {
   border: 1px solid green;
   border-spacing: 0px;
 }
 
 #container {
-width: 350px;
-height: fit-content;
-margin: auto;
+  width: 350px;
+  height: fit-content;
+  margin: auto;
 
 }
+
 #boxLeft {
   width: 70px;
   float: left;
   border: 1px solid red;
- 
+
 }
+
 #messagebox {
   float: left;
 }
 
-#encode{
+#encode {
   float: left;
 }
 
-#fractioned { /*id of a div */
+#fractioned {
+  /*id of a div */
   clear: left;
   width: 62vw;
   margin: auto;
   font-size: 12px;
   border: 0px solid green;
 }
-.frac { /* class for a table */
+
+.frac {
+  /* class for a table */
   margin: 0;
   padding: 0;
   border-spacing: 0px;
 }
-.frac td{ /* frac is class name for a table */
+
+.frac td {
+  /* frac is class name for a table */
   width: fit-content(200px);
   border: 1px solid red;
   empty-cells: hide;
@@ -109,19 +126,24 @@ margin: auto;
   height: fit-content;
   margin: auto;
   border: 1px red solid;
-  }
+}
 
-#transpositionKey{ /* id of the label for the input box of the transpositionKey */
+#transpositionKey {
+  /* id of the label for the input box of the transpositionKey */
   margin-top: 5px;
   margin-right: 10px;
   margin-bottom: 5px;
   float: left;
 }
-#tpKey{ /* id of the input box for the transposition key */
+
+#tpKey {
+  /* id of the input box for the transposition key */
   margin: 0 auto;
   margin-top: 5px;
 }
-#tpEcho{ /* the conditioned column header letters */
+
+#tpEcho {
+  /* the conditioned column header letters */
   background-color: pink;
 }
 
@@ -130,17 +152,25 @@ margin: auto;
   width: 650px;
   margin: auto;
   border: 1px red solid;
-  }
+}
 
-  .tx5 { /* class for a table */
-    margin: 0;
-    padding: 0;
-    border-spacing: 0px;
-  }
-  .tx5 td{
-    width: fit-content;
-    border: 0.5px solid blue;
-    empty-cells: hide;
-  }
+.tx5 {
+  /* class for a table */
+  margin: 0;
+  padding: 0;
+  border-spacing: 0px;
+}
 
+.tx5 td {
+  width: fit-content;
+  border: 0.5px solid blue;
+  empty-cells: hide;
+}
 
+#showHere {
+
+  border: green 1px solid;
+  display: flex;
+  justify-content: center;
+
+}

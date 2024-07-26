@@ -3,17 +3,18 @@
 
 <head>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script> -->
+  <title>ADFGVX Code</title>
   <script src="library/p5.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
-
+  <link rel="icon" type="image/x-icon" href="library/favicon.ico">
 </head>
 
 <body>
   <div class="tableContainer">
     <div class="alphaKey">
       <label id='alphaK' for="alphaKey">Input an alphabet keyword:</label>
-      <input id="alphaKey" size="15" value="ABERDEEN" /> <!--onchange="userKeyChange()"--> 
+      <input id="alphaKey" size="15" value="ABERDEEN" /> <!--onchange="userKeyChange()"-->
     </div>
     <div id="echoKey"></div>
     <div class='table5'>
@@ -218,10 +219,10 @@
   <div id="container">
     <div id="boxLeft">
       <label id='mesgLabel' for="mesg">Enter<br>Your<br>Message:</label>
-      <button id="msgButton">Show<br> Plaintext</button>   
+      <button id="msgButton">Show<br> Plaintext</button>
     </div> <!--end of div boxLeft -->
     <div id="messagebox">
-      <textarea id="mesg" rows="6" cols="35" maxlength="1024">Put your secret message here.</textarea>
+      <textarea id="mesg" rows="6" cols="35" maxlength="1024">If you don't like a test prompt, you can get a different (random) prompt with the "change test" button - or select a specific paragraph to type from the list below. To find out how fast you type, just start typing in the blank textbox on the right of the test prompt. You will see your progress, including errors on the left side as you type. In order to complete the test and save your score, you need to get 100% accuracy. You can fix errors as you go, or correct them at the end with the help of the spell checker.</textarea>
     </div> <!-- end of div messagebox-->
     <p id="aspot"></p>
     <div id="encode">
@@ -303,127 +304,129 @@
 
   <div class="transpositionContainer">
     <div class="transpositionKey">
-      <label id="transpositionKey" for="transpositionKey">Input a transposition phrase 10 to 20 letters:</label>
-      <input id="tpKey" size="20" value="THE QUICK BROWN FOX" /> <!-- onchange="tpKeyChange()"-->
+      <label id="transpositionKey" for="transpositionKey">Input a keyphrase capital letters only.</label>
+      <input id="tpKey" size="40" value="HAROLDISAGENIUSOFSORTS" /> <!-- onchange="tpKeyChange()"-->
       <span id="tpEcho"></span>
     </div> <!--end div transpositionKey -->
 
-    <div class = colBtnContainer>
-      <button id="makeColsBtn">Arrange into Columns</button>
+    <div class=colBtnContainer>
+      <button id="makeColsBtn">Put Code Under Keyphrase</button>
     </div>
   </div> <!-- end of transpositionContainer -->
 
-  
-  
-<div class="transpositionTable">
-  <table class='tx5'>
-    <tr>
-      <th id="he00"></th>
-      <th id="he01"></th>
-      <th id="he02"></th>
-      <th id="he03"></th>
-      <th id="he04"></th>
-      <th name="mid"></th>
-      <th id="he05"></th>
-      <th id="he06"></th>
-      <th id="he07"></th>
-      <th id="he08"></th>
-      <th id="he09"></th>
-      <th name="mid"></th>
-      <th id="he10"></th>
-      <th id="he11"></th>
-      <th id="he12"></th>
-      <th id="he13"></th>
-      <th id="he14"></th>
-      <th name="mid"></th>
-      <th id="he15"></th>
-      <th id="he16"></th>
-      <th id="he17"></th>
-      <th id="he18"></th>
-      <th id="he19"></th>
-    </tr>
-    <tr>
-      <td id='h00'></td>
-      <td id='h01'></td>
-      <td id='h02'></td>
-      <td id='h03'></td>
-      <td id='h04'></td>
-      <td name='mid'></td>
-      <td id='h05'></td>
-      <td id='h06'></td>
-      <td id='h07'></td>
-      <td id='h08'></td>
-      <td id='h09'></td>
-      <td name='mid'></td>
-      <td id='h10'></td>
-      <td id='h11'></td>
-      <td id='h12'></td>
-      <td id='h13'></td>
-      <td id='h14'></td>
-      <td name='mid'></td>
-      <td id='h15'></td>
-      <td id='h16'></td>
-      <td id='h17'></td>
-      <td id='h18'></td>
-      <td id='h19'></td>
-    </tr>
-    <tr>
-      <td id='h20'></td>
-      <td id='h21'></td>
-      <td id='h22'></td>
-      <td id='h23'></td>
-      <td id='h24'></td>
-      <td name='mid'></td>
-      <td id='h25'></td>
-      <td id='h26'></td>
-      <td id='h27'></td>
-      <td id='h28'></td>
-      <td id='h29'></td>
-      <td name='mid'></td>
-      <td id='h30'></td>
-      <td id='h31'></td>
-      <td id='h32'></td>
-      <td id='h33'></td>
-      <td id='h34'></td>
-      <td name='mid'></td>
-      <td id='h35'></td>
-      <td id='h36'></td>
-      <td id='h37'></td>
-      <td id='h38'></td>
-      <td id='h39'></td>
-    </tr>
-    <tr>
-      <td id='h40'></td>
-      <td id='h41'></td>
-      <td id='h42'></td>
-      <td id='h43'></td>
-      <td id='h44'></td>
-      <td name='mid'></td>
-      <td id='h45'></td>
-      <td id='h46'></td>
-      <td id='h47'></td>
-      <td id='h48'></td>
-      <td id='h49'></td>
-      <td name='mid'></td>
-      <td id='h50'></td>
-      <td id='h51'></td>
-      <td id='h52'></td>
-      <td id='h53'></td>
-      <td id='h54'></td>
-      <td name='mid'></td>
-      <td id='h55'></td>
-      <td id='h56'></td>
-      <td id='h57'></td>
-      <td id='h58'></td>
-      <td id='h59'></td>
-    </tr>
-  
-  </table>
-</div> <!-- end div transpositionTable-->
 
-<div id="showHere"></div>
-<script src="fractionalForm.js"></script>
+
+  <div class="transpositionTable">
+    <table class='tx5'>
+      <tr>
+        <th id="he00"></th>
+        <th id="he01"></th>
+        <th id="he02"></th>
+        <th id="he03"></th>
+        <th id="he04"></th>
+        <th name="mid"></th>
+        <th id="he05"></th>
+        <th id="he06"></th>
+        <th id="he07"></th>
+        <th id="he08"></th>
+        <th id="he09"></th>
+        <th name="mid"></th>
+        <th id="he10"></th>
+        <th id="he11"></th>
+        <th id="he12"></th>
+        <th id="he13"></th>
+        <th id="he14"></th>
+        <th name="mid"></th>
+        <th id="he15"></th>
+        <th id="he16"></th>
+        <th id="he17"></th>
+        <th id="he18"></th>
+        <th id="he19"></th>
+      </tr>
+      <tr>
+        <td id='h00'></td>
+        <td id='h01'></td>
+        <td id='h02'></td>
+        <td id='h03'></td>
+        <td id='h04'></td>
+        <td name='mid'></td>
+        <td id='h05'></td>
+        <td id='h06'></td>
+        <td id='h07'></td>
+        <td id='h08'></td>
+        <td id='h09'></td>
+        <td name='mid'></td>
+        <td id='h10'></td>
+        <td id='h11'></td>
+        <td id='h12'></td>
+        <td id='h13'></td>
+        <td id='h14'></td>
+        <td name='mid'></td>
+        <td id='h15'></td>
+        <td id='h16'></td>
+        <td id='h17'></td>
+        <td id='h18'></td>
+        <td id='h19'></td>
+      </tr>
+      <tr>
+        <td id='h20'></td>
+        <td id='h21'></td>
+        <td id='h22'></td>
+        <td id='h23'></td>
+        <td id='h24'></td>
+        <td name='mid'></td>
+        <td id='h25'></td>
+        <td id='h26'></td>
+        <td id='h27'></td>
+        <td id='h28'></td>
+        <td id='h29'></td>
+        <td name='mid'></td>
+        <td id='h30'></td>
+        <td id='h31'></td>
+        <td id='h32'></td>
+        <td id='h33'></td>
+        <td id='h34'></td>
+        <td name='mid'></td>
+        <td id='h35'></td>
+        <td id='h36'></td>
+        <td id='h37'></td>
+        <td id='h38'></td>
+        <td id='h39'></td>
+      </tr>
+      <tr>
+        <td id='h40'></td>
+        <td id='h41'></td>
+        <td id='h42'></td>
+        <td id='h43'></td>
+        <td id='h44'></td>
+        <td name='mid'></td>
+        <td id='h45'></td>
+        <td id='h46'></td>
+        <td id='h47'></td>
+        <td id='h48'></td>
+        <td id='h49'></td>
+        <td name='mid'></td>
+        <td id='h50'></td>
+        <td id='h51'></td>
+        <td id='h52'></td>
+        <td id='h53'></td>
+        <td id='h54'></td>
+        <td name='mid'></td>
+        <td id='h55'></td>
+        <td id='h56'></td>
+        <td id='h57'></td>
+        <td id='h58'></td>
+        <td id='h59'></td>
+      </tr>
+
+    </table>
+  </div> <!-- end div transpositionTable-->
+
+  <div id="showHere"></div>
+ 
+  <script src="fractionalForm.js"></script>
   <script src="HTML-tables.js"></script>
+  <script src="newTP.js"></script>
   <script src='polybius.js'></script>
   <script src="sketch.js"></script>
 </body>

@@ -46,7 +46,7 @@ class Polybius {
 
     let charArray = tempstr.split("");
     let uniqueChars = [...new Set(charArray)];
-    console.log('The unique characters in key=', mystr, ' are', uniqueChars.join(""))
+    //console.log('The unique characters in key=', mystr, ' are', uniqueChars.join(""))
     return uniqueChars.join("");
   }
 
@@ -231,7 +231,7 @@ class Polybius {
       if (!/9/.test(ky)) { s = this.insertAtIndex(s, '9', s.indexOf('I') + 1); }
       if (!/0/.test(ky)) { s = this.insertAtIndex(s, '0', s.indexOf('J') + 1); }
     }
-    console.log('s after step 6', s);
+    //console.log('s after step 6', s);
     this.s = s; //make it available from the class as polybius.s
     ar1 = s.split("");   //step 7  Turn s back into an array.
     //console.log(ar1)
