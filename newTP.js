@@ -3,6 +3,24 @@ function gimme(){  //return one random letter from 'ADFGVX'
     return ax[Math.floor(Math.random()*ax.length)]
 }
 
+/*function tranpose(arr) takes any 'rectangular' array
+and transposes it. Starting with a m(row)
+x n(col) array, it returns a n(row) x m(col) array.*/
+function transpose(arr) {
+    let m = arr.length; //number of rows
+    let n = arr[0].length; //number of cols
+    let tr = new Array(n); //create a transpose receiver
+    for (let i = 0; i < n; i++) {
+      tr[i] = new Array(m);
+    } //finished creating the receiver
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < m; j++) {
+        tr[i][j] = arr[j][i];
+      }
+    }
+    return tr;
+  }
+
 function codeUnderKeyPhrase(keyphrase,codestring){
     let L = keyphrase.length.toString();
     let RGX= new RegExp(".{1,"+L+"}","g");
@@ -59,4 +77,24 @@ tpKeyChange = function () {//Lets the user change the keyPhrase
 
     document.getElementById('showHere').innerHTML = '';
     createTable(arr3);
+
+    //create arr4 which will be the transposed array.
+    let arr4=transpose(arr3);
+    //document.getElementById('showHere').innerHTML = '';
+    //turn the 2d array back into strings but now transposed.
+    let arr5=[];
+    for(let i=0; i<arr4.length; i++){
+        arr5[i]=arr4[i].join("");}
+    createTable(arr5);
+    console.table(arr5); //exactly like arr4, except that each row is a string
+
+    /*now switch around the rows to match the alphabetization of the keyphrase
+    Sorting a string in JavaScript involves converting it into an array of characters, sorting the array using the sort() method, and then joining the sorted characters back into a string. This arranges the characters in ascending order based on their Unicode values. */
+        console.log('keyphrase=',keyphrase)
+        let sortString = (stringg) => {
+            return stringg.split("").sort().join("");
+        };
+        console.log('alphabetized=',sortString(keyphrase))
+    
+
 }
