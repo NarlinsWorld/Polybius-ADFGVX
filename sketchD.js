@@ -1,13 +1,14 @@
 /* Decode a message.
 We need a message to decode. */
-let MSG = "DDVVV AFVVV VVXVVA AVVAA AAGFF G"
+//let MSG = "DDVVV AFVVV VVXVVA AVVAA AAGFF G";
+let MSG ="AXVVAVGXDAAAVAVDDXXVVGDXDVGX"
+//MSG =    "AXVVAVGXDAAAVAVDDDXVVGDFDVGG"
 console.log(MSG);
-
 /*We need an keyword for the alphabet*/
 let userKey = 'ABERDEEN';
 
 /* We need a keyphrase for the columns */
-let keyphrase = 'LITTLEFOX'
+let keyphrase = 'THEOLDBROWNFOX'
 
 /* Step 1: Remove the spaces from the message */
 let workingMSG = MSG.replace(/\s/g, "");

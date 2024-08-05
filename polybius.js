@@ -147,7 +147,7 @@ class Polybius {
   } //end this  method.
 
   copyarr1d_to_a2d(arr) {
-    let n = this.n;
+    let n = this.n;  //n is the square size
     let arrlen = arr.length;
     this.a = [];
     let temp = [];
@@ -185,7 +185,7 @@ class Polybius {
     7. Turn string s back into the array ar1
     8. Copy ar1 to array a for the purpose of html display
     */
-    let n = this.n;
+    let n = this.n;  //n is the square size, 5,6, or 8
     let ky = this.ky; //the conditioned key string of characters
     let keylen = ky.length;
     let arr = this.copya2d_to_arr1d(); //step 1

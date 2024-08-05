@@ -65,6 +65,7 @@ function codeUnderKeyPhrase(keyphrase, codestring) {
   //document.getElementById('showHere').innerHTML = '';
   //createTable(arr2);  //index.html has id='showHere'
   //Done filling out hte last row with random characters
+  
   return arr2;
 } /* ********************************************************************************************************************************** */
 
@@ -208,6 +209,7 @@ function columnateTheCode() {
   }
   // console.log('The rows are switched around according to L1')
   // console.table(arr6);
+  
 
   //now transpose arr6 again so that we have columns
   let arr7 = make2d(arr6);  //arr7 is a 2d table & each indexed element is a letter. 
@@ -234,14 +236,14 @@ function columnateTheCode() {
   for (i = 0; i < sst.length; i = i + 5) {
     sfinal = sfinal + sst.slice(i, i + 5) + ' ';
     cnt=cnt+1;
-    if(cnt%4==0){sfinal=sfinal+'\n<br>'}
+    if(cnt%4==0){sfinal=sfinal+' '}
   }
 
 
   //also make a string for HTML output
  
   console.log('sfinal=', sfinal);
-  document.getElementById('showHere').innerHTML = '';
+  //document.getElementById('showHere').innerHTML = '';
   
-  document.getElementById('showHere').innerHTML = 'Transmit This code:<br>'+ sfinal;
+  document.getElementById('code').innerHTML = 'Transmit This code: '+ sfinal;
 }
