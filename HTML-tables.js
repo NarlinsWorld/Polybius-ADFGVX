@@ -65,6 +65,7 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') {
   //newTable is an id. Use it as an html div id as well as css style id
   //if a param is missing at the call, use var _ = undefined;
   // and pass the underscore. Example createTable(anArray,_,_,'putHere')
+  //console.log('newTable=',newTable);
   function rowsToObjects(headers, rows){
     return rows.reduce((acc, e, idx) =>  {
        acc.push(headers.reduce((r, h, i)=> {r[h] = e[i]; return r; }, {}))
@@ -75,7 +76,7 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') {
   console.log('colHeaderArray=',colHeaderArray);
   if (colHeaderArray !== undefined){  //when defined, we will create a data object
     data = rowsToObjects(colHeaderArray,adata);
-    console.log('find me=',data)
+    //console.log('find me=',data)
   } else {data = adata}
   
   if(ted !== undefined){ted = ted.map((item) => { //takes the row header array, ted, and creates the needed object.
@@ -126,7 +127,7 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') {
       });
     });
   }
-
+console.log('newTable=',newTable);
   // Append the table to the HTML document
   document.getElementById(newTable).appendChild(table);
 }

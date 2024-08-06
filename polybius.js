@@ -90,8 +90,8 @@ class Polybius {
   }
 
   display5(n) {
-    let noshow = document.getElementById("table8");
-    noshow.style.display = "none"; //for this use, do not show!
+    // let noshow = document.getElementById("table8");
+    // noshow.style.display = "none"; //for this use, do not show!
     var _ = undefined; //can be used to skip an optional parameter during the call
     createTable(this.a,['A','D','F','G','X'],['A','D','F','G','X'],'table6');
     // for (let j = 0; j < n; j++) {
@@ -104,8 +104,8 @@ class Polybius {
   } //end method display56
 
   display6(n) {
-    let noshow = document.getElementById("table8");
-    noshow.style.display = "none"; //for this use, do not show!
+    // let noshow = document.getElementById("table8");
+    // noshow.style.display = "none"; //for this use, do not show!
     var _ = undefined; //can be used to skip an optional parameter during the call
     createTable(this.a,['A','D','F','G','V','X'],['A','D','F','G','V','X'],'table6');
    
