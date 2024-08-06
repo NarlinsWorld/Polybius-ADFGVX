@@ -28,8 +28,8 @@ function SetUpListeners(msg,ff1) {
     colBtn.addEventListener("click", columnateTheCode);
 }
 
-//Make an alphabet. In num = 6, meaning a 6x6 Polybius square, then we can do ADFGVX code, otherwise no.
-let num = 6;
+//Make an alphabet. If num = 6, meaning a 6x6 Polybius square, then we can do ADFGVX code, otherwise no.
+let num = 8;
 let userkey = document.getElementById('alphaKey').value;
 if (num == 5 ^ num == 8) { document.getElementById('container').style.visibility = "hidden"; }
 let ps6 = new Polybius(num, userkey); //Do not change the variable name 'ps6' It is used in routines ps6.s is the string version alphabet and ps6.a is the array square alphabet.
@@ -48,6 +48,20 @@ if (num == 6) { //additional ADFGVX coding only for when a 6x6 square is employe
 }
 //displayHTML_Table('data.json'); //example call to display json data as table. 
 //createTable(array) in HTML-tables.js will output nearly any array to id='showHere' if that id is defined in the HTML. If id='showHere' is the id for a <div> you can position and style it.
+
+
+/*
+about: function createTable(data, ted) {
+Variable data is just the data that goes into the table. A js array.
+It is not the column headers or the row headers.
+To get headers, make the data be an array of objects.  Then the top column headers
+will be the keys of the objects.
+If there are some headers for each row, they must be supplied
+in an array called 'ted' and the will be the first item on that row.
+Column headers will be the keys for object data.
+
+
+*/
 
 
 //Pack my box with five dozen liquor jugs

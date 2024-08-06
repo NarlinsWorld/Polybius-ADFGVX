@@ -92,44 +92,36 @@ class Polybius {
   display5(n) {
     let noshow = document.getElementById("table8");
     noshow.style.display = "none"; //for this use, do not show!
-    noshow = document.getElementById("table6");
-    noshow.style.display = "none"; //for this use, do not show!
-    for (let j = 0; j < n; j++) {
-      for (let i = 0; i < n; i++) {
-        let s = "r" + (i + 1).toString() + (j + 1).toString();
-        //console.log(s);
-        document.getElementById(s).innerHTML = this.a[i][j];
-      } //end for loop
-    } //end for loop
+    var _ = undefined; //can be used to skip an optional parameter during the call
+    createTable(this.a,['A','D','F','G','X'],['A','D','F','G','X'],'table6');
+    // for (let j = 0; j < n; j++) {
+    //   for (let i = 0; i < n; i++) {
+    //     let s = "r" + (i + 1).toString() + (j + 1).toString();
+    //     //console.log(s);
+    //     document.getElementById(s).innerHTML = this.a[i][j];
+    //   } //end for loop
+    // } //end for loop
   } //end method display56
 
   display6(n) {
     let noshow = document.getElementById("table8");
     noshow.style.display = "none"; //for this use, do not show!
-    noshow = document.getElementById("table5");
-    noshow.style.display = "none"; //for this use, do not show!
-    for (let j = 0; j < n; j++) {
-      for (let i = 0; i < n; i++) {
-        let s = "t" + (i + 1).toString() + (j + 1).toString();
-        //console.log(s);
-        document.getElementById(s).innerHTML = this.a[i][j];
-      } //end for loop
-    } //end for loop
+    var _ = undefined; //can be used to skip an optional parameter during the call
+    createTable(this.a,['A','D','F','G','V','X'],['A','D','F','G','V','X'],'table6');
+   
   } //end method display56
 
 
   display8(n) {
-    let noshow = document.getElementById("table5");
-    noshow.style.display = "none"; //for this use, do not show!
-    noshow = document.getElementById("table6");
-    noshow.style.display = "none"; //for this use, do not show!
+    var _ = undefined; //can be used to skip an optional parameter during the call
+    createTable(this.a,['','','','','','','',''],_,'table6');
 
-    for (let j = 0; j < n; j++) {
-      for (let i = 0; i < n; i++) {
-        let s = "s" + (i + 1).toString() + (j + 1).toString();
-        document.getElementById(s).innerHTML = this.a[i][j];
-      } //end for loop
-    } //end for loop
+    // for (let j = 0; j < n; j++) {
+    //   for (let i = 0; i < n; i++) {
+    //     let s = "s" + (i + 1).toString() + (j + 1).toString();
+    //     document.getElementById(s).innerHTML = this.a[i][j];
+    //   } //end for loop
+    // } //end for loop
   } //end display8
 
   //copy 2d array named 'a' into 1d array named arr
