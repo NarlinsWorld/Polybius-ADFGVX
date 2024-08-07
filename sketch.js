@@ -13,10 +13,13 @@
 
 function SetUpListeners(msg, ff1) {
     let getInput = document.getElementById('alphaKey'); //Input text field for alphabet listener
-    getInput.addEventListener("change", ps6.userKeyChange);
+    getInput.addEventListener("change", ps6.userKeyChange); //a method in polybius.js in class Polybius
 
     var btn = document.getElementById("msgButton");  //Show Message Button Listener
     btn.addEventListener("click", function () { ff1.getText() }, false);
+
+    var getMsg = document.getElementById("messagebox");  //Show Message Button Listener
+    getMsg.addEventListener("change", function () { ff1.getText() }, false);
 
     let encBtn = document.getElementById('codeBtn');  //Encode button listener
     encBtn.addEventListener("click", function () { ff1.makeCode() }, false);

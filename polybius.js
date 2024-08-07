@@ -107,6 +107,7 @@ class Polybius {
     // let noshow = document.getElementById("table8");
     // noshow.style.display = "none"; //for this use, do not show!
     var _ = undefined; //can be used to skip an optional parameter during the call
+    document.getElementById('table6').innerHTML = "";
     createTable(this.a,['A','D','F','G','V','X'],['A','D','F','G','V','X'],'table6');
    
   } //end method display56

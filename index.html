@@ -12,20 +12,21 @@
 
 <body>
   <div class="tableContainer">
+    <h2>Code Message with ADFGVX </h2>
     <div class="alphaKey">
-      <label id='alphaK' for="alphaKey">Input an alphabet keyword:</label>
-      <input id="alphaKey" size="15" value="ABERDEEN" /> <!--onchange="userKeyChange()"-->
+      <label id='alphaK' for="alphaKey">Alphabet keyword:<br>(Letters & Digits)</label>
+      <input id="alphaKey" size="25" value="ABERDEEN" /> <!--onchange="userKeyChange()"-->
     </div>
     <div id="echoKey"></div>
 
 
-    <div id='table6'></div> <!--end div table6-->
+    <div id='table6'></div> <!--end div table6 = the only alphabet table location-->
 
 
   <div id="container">
     <div id="boxLeft">
-      <label id='mesgLabel' for="mesg">Enter<br>Your<br>Message:</label>
-      <button id="msgButton">Show<br> Plaintext</button>
+      <label id='mesgLabel' for="mesg">Enter Your Message:</label>
+      <button id="msgButton">Show Plaintext</button>
     </div> <!--end of div boxLeft -->
     <div id="messagebox">
       <textarea id="mesg" rows="6" cols="35" maxlength="1024">Attack at noon.</textarea>
@@ -40,77 +41,7 @@
     </div>
 
 
-    <div id="fractioned">
-      <span id="fh4">Fractionated form</span>
-      <table class='frac' id="fdisplay">
-        <tr>
-          <td id="a00"></td>
-          <td id="a01"></td>
-          <td id="a02"></td>
-          <td id="a03"></td>
-          <td id="a04"></td>
-          <td id="a05"></td>
-          <td id="a06"></td>
-          <td id="a07"></td>
-          <td id="a08"></td>
-          <td id="a09"></td>
-          <td id="a10"></td>
-          <td id="a11"></td>
-          <td id="a12"></td>
-          <td id="a13"></td>
-          <td id="a14"></td>
-          <td id="a15"></td>
-          <td id="a16"></td>
-          <td id="a17"></td>
-          <td id="a18"></td>
-          <td id="a19"></td>
-          <td id="a20"></td>
-          <td id="a21"></td>
-          <td id="a22"></td>
-          <td id="a23"></td>
-          <td id="a24"></td>
-          <td id="a25"></td>
-          <td id="a26"></td>
-          <td id="a27"></td>
-          <td id="a28"></td>
-          <td id="a29"></td>
-        </tr>
-        <td id="b00"></td>
-        <td id="b01"></td>
-        <td id="b02"></td>
-        <td id="b03"></td>
-        <td id="b04"></td>
-        <td id="b05"></td>
-        <td id="b06"></td>
-        <td id="b07"></td>
-        <td id="b08"></td>
-        <td id="b09"></td>
-        <td id="b10"></td>
-        <td id="b11"></td>
-        <td id="b12"></td>
-        <td id="b13"></td>
-        <td id="b14"></td>
-        <td id="b15"></td>
-        <td id="b16"></td>
-        <td id="b17"></td>
-        <td id="b18"></td>
-        <td id="b19"></td>
-        <td id="b20"></td>
-        <td id="b21"></td>
-        <td id="b22"></td>
-        <td id="b23"></td>
-        <td id="b24"></td>
-        <td id="b25"></td>
-        <td id="b26"></td>
-        <td id="b27"></td>
-        <td id="b28"></td>
-        <td id="b29"></td>
-        <tr>
-
-      </table>
-    </div> <!-- end of fractioned -->
-
-  </div> <!-- end of container -->
+    
 
   <div class="transpositionContainer">
     <div class="transpositionKey">
@@ -124,113 +55,13 @@
     </div>
   </div> <!-- end of transpositionContainer -->
 
+    <div id="fractioned">     
+  </div> <!-- end of fractioned -->
 
+</div> <!-- end of container -->
 
   <div class="transpositionTable">
-    <table class='tx5'>
-      <tr>
-        <th id="he00"></th>
-        <th id="he01"></th>
-        <th id="he02"></th>
-        <th id="he03"></th>
-        <th id="he04"></th>
-        <th name="mid"></th>
-        <th id="he05"></th>
-        <th id="he06"></th>
-        <th id="he07"></th>
-        <th id="he08"></th>
-        <th id="he09"></th>
-        <th name="mid"></th>
-        <th id="he10"></th>
-        <th id="he11"></th>
-        <th id="he12"></th>
-        <th id="he13"></th>
-        <th id="he14"></th>
-        <th name="mid"></th>
-        <th id="he15"></th>
-        <th id="he16"></th>
-        <th id="he17"></th>
-        <th id="he18"></th>
-        <th id="he19"></th>
-      </tr>
-      <tr>
-        <td id='h00'></td>
-        <td id='h01'></td>
-        <td id='h02'></td>
-        <td id='h03'></td>
-        <td id='h04'></td>
-        <td name='mid'></td>
-        <td id='h05'></td>
-        <td id='h06'></td>
-        <td id='h07'></td>
-        <td id='h08'></td>
-        <td id='h09'></td>
-        <td name='mid'></td>
-        <td id='h10'></td>
-        <td id='h11'></td>
-        <td id='h12'></td>
-        <td id='h13'></td>
-        <td id='h14'></td>
-        <td name='mid'></td>
-        <td id='h15'></td>
-        <td id='h16'></td>
-        <td id='h17'></td>
-        <td id='h18'></td>
-        <td id='h19'></td>
-      </tr>
-      <tr>
-        <td id='h20'></td>
-        <td id='h21'></td>
-        <td id='h22'></td>
-        <td id='h23'></td>
-        <td id='h24'></td>
-        <td name='mid'></td>
-        <td id='h25'></td>
-        <td id='h26'></td>
-        <td id='h27'></td>
-        <td id='h28'></td>
-        <td id='h29'></td>
-        <td name='mid'></td>
-        <td id='h30'></td>
-        <td id='h31'></td>
-        <td id='h32'></td>
-        <td id='h33'></td>
-        <td id='h34'></td>
-        <td name='mid'></td>
-        <td id='h35'></td>
-        <td id='h36'></td>
-        <td id='h37'></td>
-        <td id='h38'></td>
-        <td id='h39'></td>
-      </tr>
-      <tr>
-        <td id='h40'></td>
-        <td id='h41'></td>
-        <td id='h42'></td>
-        <td id='h43'></td>
-        <td id='h44'></td>
-        <td name='mid'></td>
-        <td id='h45'></td>
-        <td id='h46'></td>
-        <td id='h47'></td>
-        <td id='h48'></td>
-        <td id='h49'></td>
-        <td name='mid'></td>
-        <td id='h50'></td>
-        <td id='h51'></td>
-        <td id='h52'></td>
-        <td id='h53'></td>
-        <td id='h54'></td>
-        <td name='mid'></td>
-        <td id='h55'></td>
-        <td id='h56'></td>
-        <td id='h57'></td>
-        <td id='h58'></td>
-        <td id='h59'></td>
-      </tr>
 
-    </table>
-  </div> <!-- end div transpositionTable-->
 
   <div id="showHere"></div>
  

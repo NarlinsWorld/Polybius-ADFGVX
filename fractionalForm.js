@@ -44,7 +44,7 @@ class FractionalForm {
         //console.log(this.codestring);
         //console.log(this.msg);
         //displayfractioned(codestring);
-        this.makeJSON(this.msg);
+        //this.makeJSON(this.msg);  don't display this. It is the code of the message directly frm the polybius table
     }
 
     makeJSON(plaintext) {

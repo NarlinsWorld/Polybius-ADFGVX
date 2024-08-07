@@ -8,8 +8,14 @@ canvas {
   display: block;
 }
 
+h2 {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  border: 1px solid green;
+}
+
 .tableContainer {
-  width: 350px;
+  width: 550px;
   /* height: 100px; */
   margin: auto;
   border: 1px red solid;
@@ -17,15 +23,15 @@ canvas {
 
 #alphaK {
   /* id of the label for the input box of the key */
-  margin-top: 25px;
-  margin-right: 10px;
+  margin-top: 10px;
+  margin-right: 3cqmax;
   float: left;
 }
 
 #alphaKey {
   /* id of the input box for the key */
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 
@@ -78,9 +84,10 @@ canvas {
 }
 
 #boxLeft {
-  width: 70px;
-  float: left;
-  /*border: 1px solid red;*/
+  margin-top: 3px;
+  width: 550px;
+  /* float: left; */
+  border: 1px solid red;
 
 }
 
@@ -120,11 +127,7 @@ canvas {
   empty-cells: hide;
 }
 
-#fh4 {
-  color: purple;
-  font-weight: bold;
 
-}
 
 .transpositionContainer {
   width: 350px;
@@ -159,8 +162,7 @@ canvas {
   border: 1px red solid;
 }
 
-.tx5 {
-  /* class for a table */
+/* .tx5 {
   margin: 0;
   padding: 0;
   border-spacing: 0px;
@@ -170,7 +172,7 @@ canvas {
   width: fit-content;
   border: 0.5px solid blue;
   empty-cells: hide;
-}
+} */
 
 #showHere {
 
