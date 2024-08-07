@@ -4,7 +4,7 @@ We need a message to decode. */
 let MSG ="AXVVAVGXDAAAVAVDDXXVVGDXDVGX"
 //MSG =    "AXVVAVGXDAAAVAVDDDXVVGDFDVGG"
 console.log(MSG);
-/*We need an keyword for the alphabet*/
+/*We need a keyword for the alphabet*/
 let userKey = 'ABERDEEN';
 
 /* We need a keyphrase for the columns */

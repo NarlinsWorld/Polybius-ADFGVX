@@ -1,6 +1,6 @@
 
 /* *********************************************************************************************************************
-function to select an return 1 random item from a list. The list is currently 'ADFGVX' */
+function to select and return 1 random item from a list. The list is currently 'ADFGVX' */
 function gimme() {  
   let ax = ['A', 'D', 'F', 'G', 'V', 'X'];
   return ax[Math.floor(Math.random() * ax.length)]
