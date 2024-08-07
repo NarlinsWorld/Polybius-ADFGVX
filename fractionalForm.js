@@ -58,14 +58,9 @@ class FractionalForm {
                     code: codestring[2 * i] + codestring[2 * i + 1]
                 })
         }
-        let tempArray=[];
-        jsonff.forEach((item,index) =>{
-            console.log([index,item.msg, item.code])
-            tempArray.push(item.msg, item.code);
-        });
-        console.log([['A', 'AA'],['T', 'VX'],['T', 'VX']]);
+
         var _ = undefined;
-        createTable1(jsonff); //This will output fractionated text to the HTML screen.
+        createTable(jsonff,_,_,"fractioned"); //This will output fractionated text to the HTML screen.
     }
 
     encode(letter) {  // returns a matched pair from the letters ADFGVX using alphabet ps6.a

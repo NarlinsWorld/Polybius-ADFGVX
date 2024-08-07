@@ -58,14 +58,37 @@ function displayHTML_Table(tablename) {
     .catch(error => console.error('Error:', error));
 }
 
-function createTable(adata, colHeaderArray, ted,newTable='newTable') { 
-  //adata is an array, 
-  //data is an object, 
-  //ted is an object of row headers & key is h
-  //newTable is an id. Use it as an html div id as well as css style id
-  //if a param is missing at the call, use var _ = undefined;
-  // and pass the underscore. Example createTable(anArray,_,_,'putHere')
-  //console.log('newTable=',newTable);
+
+
+function displayHTML_Table(tablename) {
+  fetch(tablename)                                  //the filename
+    .then(response => response.json())
+    .then(data => {
+      // Call function to display table
+      //createTable(data.employees);
+      createTable(data.employees);                    //the arrayname
+      console.table(data.employees);
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+//createTable(adata,colHeaderArray,ted); //adata is some array for the table data.
+// colHeaderArray [optional] is an array of column headers that we might want 
+// ted [optional] is an array of row headers.
+
+//displayHTML_Table("data.json");
+
+//This function will make an array (supplied as rows) into an object
+// and each column will have the key from headers
+// var headers = ['A','D','F','G','X'];
+// function rowsToObjects(headers, rows){
+//   return rows.reduce((acc, e, idx) =>  {
+//      acc.push(headers.reduce((r, h, i)=> {r[h] = e[i]; return r; }, {}))
+//      return acc;
+//   }, []);
+// }
+
+function createTable(adata, colHeaderArray, ted,newTable='newTable') { //adata is an array, data is an object, ted is an object of row headers & key is h
   function rowsToObjects(headers, rows){
     return rows.reduce((acc, e, idx) =>  {
        acc.push(headers.reduce((r, h, i)=> {r[h] = e[i]; return r; }, {}))
@@ -76,7 +99,7 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') {
   console.log('colHeaderArray=',colHeaderArray);
   if (colHeaderArray !== undefined){  //when defined, we will create a data object
     data = rowsToObjects(colHeaderArray,adata);
-    //console.log('find me=',data)
+    console.log('find me=',data)
   } else {data = adata}
   
   if(ted !== undefined){ted = ted.map((item) => { //takes the row header array, ted, and creates the needed object.
@@ -84,7 +107,7 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') {
   });}
 
   const table = document.createElement('table');
-  table.id = newTable;
+  table.id = "newTable";
   const tableHead = document.createElement('thead');
   const tBody = document.createElement('tbody');
 
@@ -127,36 +150,7 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') {
       });
     });
   }
-console.log('newTable=',newTable);
+
   // Append the table to the HTML document
   document.getElementById(newTable).appendChild(table);
-}
-
-
-function displayHTML_Table(tablename) {
-  fetch(tablename)                                  //the filename
-    .then(response => response.json())
-    .then(data => {
-      // Call function to display table
-      //createTable(data.employees);
-      createTable(data.employees);                    //the arrayname
-      console.table(data.employees);
-    })
-    .catch(error => console.error('Error:', error));
-}
-
-//createTable(adata,colHeaderArray,ted); //adata is some array for the table data.
-// colHeaderArray [optional] is an array of column headers that we might want 
-// ted [optional] is an array of row headers.
-
-//displayHTML_Table("data.json");
-
-//This function will make an array (supplied as rows) into an object
-// and each column will have the key from headers
-// var headers = ['A','D','F','G','X'];
-// function rowsToObjects(headers, rows){
-//   return rows.reduce((acc, e, idx) =>  {
-//      acc.push(headers.reduce((r, h, i)=> {r[h] = e[i]; return r; }, {}))
-//      return acc;
-//   }, []);
-// }
+} 
