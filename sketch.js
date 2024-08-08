@@ -29,6 +29,10 @@ function SetUpListeners(msg, ff1) {
 
     let colBtn = document.getElementById('makeColsBtn');  //'Put Code Under KeyPhrase' Button Listener
     colBtn.addEventListener("click", columnateTheCode);
+
+    //Now for the decode listeners
+    let btn1 = document.getElementById("decode");  //start the decode program
+    btn1.addEventListener("click", idecode);
 }
 
 //Make an alphabet. If num = 6, meaning a 6x6 Polybius square, then we can do ADFGVX code, otherwise no.

@@ -99,7 +99,7 @@ Alphabetized = 47BDEFHLNOOORTWX
 List Returned = ['6', '7', '8', '5', '2', '13', '1', '4', '12', '3', '10', '14', '9', '0', '11', '15']*/
 alphaAnagram = function (keyphrase) {
   let alph = keyphrase.split("").sort().join(""); //alph is keyphrase but in alphabetic order
-  console.log('alphabetic phrase =',alph);
+  //console.log('alphabetic phrase =',alph);
   let L1 = []; //put the indices of keyphrase here in the order of alpha
   for (i in alph) {
     for (index in keyphrase) {
@@ -199,8 +199,8 @@ function columnateTheCode() {
   /*now switch around the rows to match the alphabetization of the keyphrase
   Sorting a string in JavaScript involves converting it into an array of characters, sorting the array using the sort() method, and then joining the sorted characters back into a string. This arranges the characters in ascending order based on their Unicode values. */
   let L1 = alphaAnagram(keyphrase);
-  console.log('keyphrase=', keyphrase)
-  console.log('L1=', L1)
+  // console.log('keyphrase=', keyphrase)
+  // console.log('L1=', L1)
 
   //Build array arr6 which is arr5 with the rows switch around.
   let arr6 = []
@@ -242,7 +242,7 @@ function columnateTheCode() {
 
   //also make a string for HTML output
  
-  console.log('sfinal=', sfinal);
+  //console.log('sfinal=', sfinal);
   //document.getElementById('showHere').innerHTML = '';
   
   document.getElementById('code').innerHTML = 'Transmit This code: '+ sfinal;

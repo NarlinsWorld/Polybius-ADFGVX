@@ -96,10 +96,10 @@ function createTable(adata, colHeaderArray, ted,newTable='newTable') { //adata i
     }, []);
   }
   let data;
-  console.log('colHeaderArray=',colHeaderArray);
+  //console.log('colHeaderArray=',colHeaderArray);
   if (colHeaderArray !== undefined){  //when defined, we will create a data object
     data = rowsToObjects(colHeaderArray,adata);
-    console.log('find me=',data)
+    
   } else {data = adata}
   
   if(ted !== undefined){ted = ted.map((item) => { //takes the row header array, ted, and creates the needed object.

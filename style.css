@@ -182,7 +182,7 @@ h2 {
 
 #showHere {
 
-  border: green 1px solid;
+  /* border: green 1px solid; */
   display: flex;
   justify-content: center;
 
@@ -200,4 +200,11 @@ h2 {
   color: white;
   font-weight: bold;
   line-height: 25px;
+}
+
+.decodeContainer {
+  margin: 0 auto;
+  max-width: 550px;
+  height: 200px;
+  border: 1px solid rgb(170, 37, 99);
 }
