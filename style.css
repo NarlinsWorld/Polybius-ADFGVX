@@ -77,40 +77,52 @@ h2 {
 }
 
 #container {
-  width: 650px;
-  height: fit-content;
-  margin: auto;
-
+  width: 552px;
+  /* height: fit-content; */
+  height: 180px;
+  margin: 0 auto;
+  border: 1px black solid;
 }
 
 #boxLeft {
   margin-top: 3px;
-  width: 550px;
-  /* float: left; */
-  border: 1px solid red;
+  width: 250px;
+  border: 2px solid rgb(8, 237, 180);
+  float: none;
 
 }
 
 #messagebox {
   float: left;
+  max-width: 275px;
 }
 
-#codedMSG{
+#codedMSG {
   float: left;
+  max-width: 220px;
   /*border: 1px solid purple;*/
 }
 
-#encode {
-  float: left;
+#thirdContainer {
+  margin: 0 auto;
+  max-width: 550px;
+  height: fit-content;
+  border: 1px solid green;
+}
+
+#aspot {
+  width: 500px;
+  word-wrap: break-word;
 }
 
 #fractioned {
   /*id of a div */
   clear: left;
+  display: none;
   width: 62vw;
   margin: auto;
   font-size: 12px;
-  border: 0px solid green;
+  border: 5px solid pink;
 }
 
 .frac {
@@ -129,19 +141,13 @@ h2 {
 
 
 
-.transpositionContainer {
-  width: 350px;
-  height: fit-content;
-  margin: auto;
-  border: 1px red solid;
-}
-
 #transpositionKey {
   /* id of the label for the input box of the transpositionKey */
   margin-top: 5px;
   margin-right: 10px;
   margin-bottom: 5px;
   float: left;
+  border: 1px solid brown;
 }
 
 #tpKey {

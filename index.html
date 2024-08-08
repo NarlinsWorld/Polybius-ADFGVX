@@ -22,49 +22,62 @@
 
     <div id='table6'></div> <!--end div table6 = the only alphabet table location-->
 
+  </div> <!-- end tableContainer -->
+
 
   <div id="container">
+    <div class="transpositionKey">
+      <label id="transpositionKey" for="transpositionKey">Input a keyphrase capital letters only.</label>
+      <input id="tpKey" size="39" value="THEOLDBROWNFOX" /> <!-- onchange="tpKeyChange()"-->
+      <span id="tpEcho"></span>
+    </div> <!--end div transpositionKey -->
+
+
     <div id="boxLeft">
-      <label id='mesgLabel' for="mesg">Enter Your Message:</label>
-      <button id="msgButton">Show Plaintext</button>
+      <!-- <label id='mesgLabel' for="mesg">Enter Your Message in the box below:</label> -->
+      <span>Enter Your Message in the box below:</span>
     </div> <!--end of div boxLeft -->
+
+
     <div id="messagebox">
       <textarea id="mesg" rows="6" cols="35" maxlength="1024">Attack at noon.</textarea>
       <!-- Hastings succeeded as Earl when his father died in May 1701 but never married and the title passed to his half-brother Theophilus after his death in February 1705. He left an illegitimate son named Henry in Utrecht, who was brought up by Elizabeth and is thought to be the Henry Hastings who was treasurer of the Society for the Propagation of Christian Knowledge in 1747. -->
     </div> <!-- end of div messagebox-->
+
     <div id="codedMSG">
-      <textarea id="code" rows="6" cols="35" maxlength="1024">RANDOMCODELETTERS</textarea>
-    </div>
-    <p id="aspot">LETTERSTOBEREPLACED</p>
-    <div id="encode">
-      <button id="codeBtn">Encode</button>
-    </div>
+      <textarea id="code" rows="6" cols="35" maxlength="1024">The code string will show here.</textarea>
+    </div> <!-- end div codedMSG  -->
+
+  </div> <!-- end of container -->
+
+  <div id="thirdContainer">
+
+    <div id="SHOWPLAINTEXT">
+      <button id="msgButton">Show Plaintext</button>
+      <span id="aspot">The plaintext to be encoded will show here</span>
+
+    </div> <!-- end div SHOWPLAINTEXT -->
 
 
-    
 
-  <div class="transpositionContainer">
-    <div class="transpositionKey">
-      <label id="transpositionKey" for="transpositionKey">Input a keyphrase capital letters only.</label>
-      <input id="tpKey" size="40" value="THEOLDBROWNFOX" /> <!-- onchange="tpKeyChange()"-->
-      <span id="tpEcho"></span>
-    </div> <!--end div transpositionKey -->
 
-    <div class=colBtnContainer>
-      <button id="makeColsBtn">Put Code Under &#945;-Keyphrase</button>
-    </div>
-  </div> <!-- end of transpositionContainer -->
+    <button id="codeBtn">Encode</button>
+    <button id="makeColsBtn">Put Code Under &#945;-Keyphrase</button>
 
-    <div id="fractioned">     
+
+  </div><!--end div thirdContainer-->
+
+
+  <div id="fractioned">
   </div> <!-- end of fractioned -->
 
-</div> <!-- end of container -->
 
-  <div class="transpositionTable">
+
+
 
 
   <div id="showHere"></div>
- 
+
   <script src="fractionalForm.js"></script>
   <script src="HTML-tables.js"></script>
   <script src="newTP.js"></script>

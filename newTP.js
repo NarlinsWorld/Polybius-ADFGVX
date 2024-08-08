@@ -218,7 +218,7 @@ function columnateTheCode() {
   //turn the 2d array back into strings but now untransposed.
   arr7 = make1d(arr6);
   
-  console.log('arr7, Transposed again so that the alphabetized keyPhrase would go along the top header')
+  //console.log('arr7, Transposed again so that the alphabetized keyPhrase would go along the top header')
   //console.table(arr7);
   // document.getElementById('showHere').innerHTML = '';
   // createTable(arr7);
