@@ -33,6 +33,11 @@ function SetUpListeners(msg, ff1) {
     //Now for the decode listeners
     let btn1 = document.getElementById("decode");  //start the decode program
     btn1.addEventListener("click", idecode);
+
+    //the reset button will restart ADFGVX
+    let btn2 = document.getElementById("resetBtn"); //call the ADFGVX function\
+    btn2.addEventListener("click",ADFGVX);
+    btn2.addEventListener("mouseover", hoverReset);
 }
 
 //Make an alphabet. If num = 6, meaning a 6x6 Polybius square, then we can do ADFGVX code, otherwise no.
@@ -40,36 +45,29 @@ let num = 6;
 let userkey = document.getElementById('alphaKey').value;
 if (num == 5 ^ num == 8) { document.getElementById('container').style.visibility = "hidden"; }
 let ps6 = new Polybius(num, userkey); //Do not change the variable name 'ps6' It is used in routines ps6.s is the string version alphabet and ps6.a is the array square alphabet.
-//console.table(ps6.a);
-//createTable(this.a,['A','D','F','G','V','X'],['A','D','F','G','V','X'],'showHere');
-//Instantiate the fractionated form class as ff1
+
 if (num == 6) { //additional ADFGVX coding only for when a 6x6 square is employed
+    ADFGVX();
+}
+
+function ADFGVX() {  //only call this if num=6. i.e. a 6x6 polybius square
+    //console.table(ps6.a);
+    //createTable(this.a,['A','D','F','G','V','X'],['A','D','F','G','V','X'],'showHere');
+    //Instantiate the fractionated form class as ff1
     let msg = document.getElementById('mesg').value; //fetch the default from the HTML screen.
     ff1 = new FractionalForm(ps6.a, msg);
     let _ = undefined;
-    
+
     //Set up listeners for input boxes and buttons.
     SetUpListeners(msg, ff1);
-
-    //Get the fractioned form code arranged under a keyphrase
-
+    btn2 = document.getElementById("resetBtn");
+    btn2.style.backgroundColor = "green";
 }
-//displayHTML_Table('data.json'); //example call to display json data as table. 
-//createTable(array) in HTML-tables.js will output nearly any array to id='showHere' if that id is defined in the HTML. If id='showHere' is the id for a <div> you can position and style it.
 
-
-/*
-about: function createTable(data, ted) {
-Variable data is just the data that goes into the table. A js array.
-It is not the column headers or the row headers.
-To get headers, make the data be an array of objects.  Then the top column headers
-will be the keys of the objects.
-If there are some headers for each row, they must be supplied
-in an array called 'ted' and the will be the first item on that row.
-Column headers will be the keys for object data.
-
-
-*/
+function hoverReset(){
+    btn2 = document.getElementById("resetBtn");
+    btn2.style.backgroundColor = "yellow";
+}
 
 
 //Pack my box with five dozen liquor jugs

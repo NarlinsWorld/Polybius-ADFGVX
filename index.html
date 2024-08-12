@@ -7,12 +7,13 @@
   <script src="library/p5.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
-  <link rel="icon" type="image/x-icon" href="library/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="library/drdrugus.ico">
 </head>
 
 <body>
   <div class="tableContainer">
-    <h2>Code Message with ADFGVX </h2>
+    <span id='likeH2'>Code Message with ADFGVX </span>
+    <button id="resetBtn" style="float: right; color: orange;" title="Push Encode Again">RESET</button>
     <div class="alphaKey">
       <label id='alphaK' for="alphaKey">Alphabet keyword:<br>(Letters & Digits)</label>
       <input id="alphaKey" size="25" value="ABERDEEN" /> <!--onchange="userKeyChange()"-->
@@ -74,7 +75,7 @@
 
   <div id="showHere"></div>
 
-  <br><br><br>
+  <br><br>
   <div class="decodeContainer">
     <textarea id="uncode" rows="6" cols="35" maxlength="1024">Put the received secret code here.  Uses the alphabet and key phrase from above.</textarea>
     <br>

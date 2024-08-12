@@ -14,7 +14,10 @@ function idecode() {
     console.log('userKey=', userKey);
 
     //     /* We need a keyphrase for the columns */
-    let keyphrase = document.getElementById('tpKey').value;
+    let tp = document.getElementById('tpKey').value;
+    let rgx = /\W|_/g   //and this line really does that
+    let mystring = tp.toUpperCase(); //change all case to upper   
+    let keyphrase = mystring.replace(rgx, ''); //removes everything matched in the rgx.
     console.log('keyphrase = ', keyphrase);
 
     //     /* Step 1: Remove the spaces from the message */
@@ -64,23 +67,23 @@ function idecode() {
 
     //     /* Step 9: For each pair of letters in s, substitute the Polybius alphabet letter */
 
-        //changes all letters in s to be digits 0 to 5
-        for (let i = 0; i < s.length; i++) {
-            s = s.replace(/A/g, "0");
-            s = s.replace(/D/g, "1");
-            s = s.replace(/F/g, "2");
-            s = s.replace(/G/g, "3");
-            s = s.replace(/V/g, "4");
-            s = s.replace(/X/g, "5");
-        }
-        console.log(s)
+    //changes all letters in s to be digits 0 to 5
+    for (let i = 0; i < s.length; i++) {
+        s = s.replace(/A/g, "0");
+        s = s.replace(/D/g, "1");
+        s = s.replace(/F/g, "2");
+        s = s.replace(/G/g, "3");
+        s = s.replace(/V/g, "4");
+        s = s.replace(/X/g, "5");
+    }
+    console.log(s)
 
-         /* Step 10: Decode s using the polybius alphabet */
-        let msg = [];
-        for (let i = 0; i < s.length - 1; i = i + 2) {
-            msg = msg + ps6.a[s[i]][s[i + 1]]
-        }
+    /* Step 10: Decode s using the polybius alphabet */
+    let msg = [];
+    for (let i = 0; i < s.length - 1; i = i + 2) {
+        msg = msg + ps6.a[s[i]][s[i + 1]]
+    }
 
-        console.log(msg);
-        document.getElementById('decodedMSG').innerHTML = msg
+    console.log(msg);
+    document.getElementById('decodedMSG').innerHTML = msg
 }
